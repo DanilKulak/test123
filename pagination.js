@@ -65,12 +65,9 @@ function createPagination(totalPages, page) {
 
   element.innerHTML = liTag;
 
-  // Додаємо обробники подій тільки для активних кнопок
   const activeButtons = document.querySelectorAll('.pagination li:not(.disabled)');
   activeButtons.forEach(button => {
     button.addEventListener('click', event => {
-      // Ваш код обробки події тут
-      // Наприклад, ви можете вивести номер сторінки або викликати інші функції
       console.log(`Ви вибрали сторінку: ${event.currentTarget.textContent}`);
     });
   });
